@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <img id="grassTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg">
+        <img id="skyTexture" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/sechelt.jpg">
+      </a-assets>
+      <a-plane 
+        src="#grassTexture"
+        rotation="-90 0 0"
+        width="50"
+        height="50"
+        repeat="20 20"
+        position="0 0 0">
+      </a-plane>
+      <a-sky src="#skyTexture"></a-sky>
+      <a-entity camera look-controls position="0 1.6 5"></a-entity>
+    </a-scene>
+  </body>
+</html>
